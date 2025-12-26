@@ -77,33 +77,34 @@ AI Video Clipper is a full‑stack app that analyzes long videos, finds the most
 
 ai-video-clipper/
 ├── backend/
-│ ├── src/
-│ │ ├── routes/
-│ │ │ └── video.ts # /api/video/* routes
-│ │ ├── services/
-│ │ │ ├── videoProcessor.ts # FFmpeg, ffprobe, yt-dlp logic
-│ │ │ └── aiProvider.ts # AI provider abstraction
-│ │ ├── db.ts # in-memory job/clip storage
-│ │ ├── types.ts # shared backend types
-│ │ └── server.ts # Express app bootstrap
-│ ├── package.json
-│ └── tsconfig.json
+│   ├── src/
+│   │   ├── routes/
+│   │   │   └── video.ts           # /api/video/* routes
+│   │   ├── services/
+│   │   │   ├── videoProcessor.ts  # FFmpeg, ffprobe, yt-dlp logic
+│   │   │   └── aiProvider.ts      # AI provider abstraction
+│   │   ├── db.ts                  # in-memory job/clip storage
+│   │   ├── types.ts               # shared backend types
+│   │   └── server.ts              # Express app bootstrap
+│   ├── package.json
+│   └── tsconfig.json
 ├── frontend/
-│ ├── src/
-│ │ ├── components/
-│ │ │ ├── SourcePanel.tsx
-│ │ │ ├── OptionsPanel.tsx
-│ │ │ └── ResultsGrid.tsx # clips grid + preview modal
-│ │ ├── services/
-│ │ │ └── api.ts # axios API client + helpers
-│ │ ├── types.ts # shared frontend types
-│ │ └── App.tsx
-│ ├── index.html
-│ ├── package.json
-│ └── tsconfig.json
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── SourcePanel.tsx
+│   │   │   ├── OptionsPanel.tsx
+│   │   │   └── ResultsGrid.tsx    # clips grid + preview modal
+│   │   ├── services/
+│   │   │   └── api.ts             # axios API client + helpers
+│   │   ├── types.ts               # shared frontend types
+│   │   └── App.tsx
+│   ├── index.html
+│   ├── package.json
+│   └── tsconfig.json
 ├── .gitignore
 ├── LICENSE
 └── README.md
+
 
 ## Prerequisites
 
