@@ -105,10 +105,6 @@ ai-video-clipper/
 ├── LICENSE
 └── README.md
 
-text
-
----
-
 ## Prerequisites
 
 Before running the project locally, install:
